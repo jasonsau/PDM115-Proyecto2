@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "306899796546",
+    "project_id": "camaratrampa-65ac7",
+    "storage_bucket": "camaratrampa-65ac7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306899796546:android:966ff3d5df37bde8b863db",
+        "android_client_info": {
+          "package_name": "sv.edu.ues.fia.eisi.camaratrampa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306899796546-34v33gad1as16t67tocgqkpb6okerc5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV5iqSOdpbZguIyR2LxXXFms1FXBu02h0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306899796546-34v33gad1as16t67tocgqkpb6okerc5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
