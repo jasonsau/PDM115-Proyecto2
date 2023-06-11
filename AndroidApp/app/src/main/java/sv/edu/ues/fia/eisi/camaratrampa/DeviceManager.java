@@ -20,7 +20,7 @@ public class DeviceManager {
 
     public static void registerDevice(String token, Context context){
         RequestQueue queue = Volley.newRequestQueue(context);
-        String url = "http://192.168.1.2:8001/Registrar.php";
+        String url = "http://192.168.1.10:8001/Registrar.php";
 
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
@@ -29,10 +29,11 @@ public class DeviceManager {
                     @Override
                     public void onResponse(String response){
                         try {
+                            System.out.println(response);
                             JSONObject jsonObject = new JSONObject(response);
                             String code = jsonObject.getString("status");
                             String message = jsonObject.getString("message");
-                            Integer id = jsonObject.getInt("id");
+                            Integer id = Integer.parseInt(jsonObject.getString("id"));
                             if("success".equals(code)) {
                                 context.getSharedPreferences("SP_FILE", 0)
                                         .edit()
@@ -74,6 +75,9 @@ public class DeviceManager {
                             .getInt("DEVICEID", 0);
                     params.put("id", val.toString());
                 }
+                System.out.println("Son los parametros de la peticion");
+                System.out.println(params.get("Device"));
+                System.out.println(params.get("id"));
                 return params;
             }
         };
